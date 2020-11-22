@@ -1,0 +1,13 @@
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\bin\Debug\netcoreapp3.1\appConsole.exe
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\bin\Debug\netcoreapp3.1\appConsole.deps.json
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\bin\Debug\netcoreapp3.1\appConsole.runtimeconfig.json
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\bin\Debug\netcoreapp3.1\appConsole.runtimeconfig.dev.json
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\bin\Debug\netcoreapp3.1\appConsole.dll
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\bin\Debug\netcoreapp3.1\appConsole.pdb
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\obj\Debug\netcoreapp3.1\appConsole.csprojAssemblyReference.cache
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\obj\Debug\netcoreapp3.1\appConsole.AssemblyInfoInputs.cache
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\obj\Debug\netcoreapp3.1\appConsole.AssemblyInfo.cs
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\obj\Debug\netcoreapp3.1\appConsole.csproj.CoreCompileInputs.cache
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\obj\Debug\netcoreapp3.1\appConsole.dll
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\obj\Debug\netcoreapp3.1\appConsole.pdb
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\appConsole\obj\Debug\netcoreapp3.1\appConsole.genruntimeconfig.cache
