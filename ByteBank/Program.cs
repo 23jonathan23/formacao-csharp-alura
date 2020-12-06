@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using ByteBank.Domain;
 
 namespace ByteBank
@@ -43,11 +43,11 @@ namespace ByteBank
             contaPaulo.Tranferir(100, contaDaGabriela);
 
             Console.WriteLine(contaMarcos.titular);
-            Console.WriteLine(contaMarcos.saldo);
+            Console.WriteLine(contaMarcos.ObterSaldo());
             Console.WriteLine(contaPaulo.titular);
-            Console.WriteLine(contaPaulo.saldo);
+            Console.WriteLine(contaPaulo.ObterSaldo());
             Console.WriteLine(contaDaGabriela.titular);
-            Console.WriteLine(contaDaGabriela.saldo);
+            Console.WriteLine(contaDaGabriela.ObterSaldo());
         }
     }
 }

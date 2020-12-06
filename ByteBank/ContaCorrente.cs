@@ -17,6 +17,10 @@ namespace ByteBank.Domain
             saldo += valor;
         }
 
+        public double ObterSaldo()
+        {
+            return saldo;
+        }
 
         public bool Sacar(double valor)
         {
