@@ -14,11 +14,9 @@ namespace ByteBank
                 profissao = "Desenvolvedor"
             };
 
-            ContaCorrente contaMarcos = new ContaCorrente()
+            ContaCorrente contaMarcos = new ContaCorrente(100, 56526)
             {
-                Titular = marcos,
-                Agencia = 100,
-                Numero = 56526,
+                Titular = marcos
             };
 
             contaMarcos.Saldo = 120.60;
@@ -35,7 +33,7 @@ namespace ByteBank
                 profissao = "Desenvolvedor SR"
             };
 
-            ContaCorrente contaDaGabriela = new ContaCorrente()
+            ContaCorrente contaDaGabriela = new ContaCorrente(120, 333)
             {
                 Titular = gabriela
             };
