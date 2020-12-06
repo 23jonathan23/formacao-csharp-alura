@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using ByteBank.Domain;
 
 namespace ByteBank
@@ -19,8 +19,9 @@ namespace ByteBank
                 titular = marcos,
                 agencia = 100,
                 numero = 56526,
-                saldo = 120.60
             };
+
+            contaMarcos.DefinirSaldo(120.60);
 
             ContaCorrente contaPaulo = contaMarcos;
 

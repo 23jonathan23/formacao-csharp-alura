@@ -5,7 +5,18 @@ namespace ByteBank.Domain
         public Cliente titular { get; set; }
         public int agencia { get; set; }
         public int numero { get; set; }
-        public double saldo { get; set; }
+        private double saldo;
+
+        public void DefinirSaldo(double valor)
+        {
+            if (valor < saldo)
+            {
+                return;
+            }
+
+            saldo += valor;
+        }
+
 
         public bool Sacar(double valor)
         {
