@@ -17,6 +17,7 @@ namespace ByteBank
             ContaCorrente contaPaulo = contaMarcos;
 
             contaPaulo.Sacar(50);
+            contaPaulo.Depositar(500);
 
             Console.WriteLine(contaMarcos.titular);
             Console.WriteLine(contaMarcos.saldo);
