@@ -46,6 +46,7 @@ namespace ByteBank
             Console.WriteLine(contaPaulo.Saldo);
             Console.WriteLine(contaDaGabriela.Titular);
             Console.WriteLine(contaDaGabriela.Saldo);
+            Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
         }
     }
 }

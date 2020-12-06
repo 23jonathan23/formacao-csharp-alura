@@ -19,10 +19,14 @@ namespace ByteBank.Domain
             }
         }
 
+        public static int TotalDeContasCriadas { get; set; }
+
         public ContaCorrente(int agencia, int numero)
         {
             Agencia = agencia;
             Numero = numero;
+
+            TotalDeContasCriadas++;
         }
 
         public bool Sacar(double valor)
