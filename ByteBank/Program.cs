@@ -1,4 +1,5 @@
 ﻿using System;
+using ByteBank.Domain;
 
 namespace ByteBank
 {
@@ -6,9 +7,16 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
+            var marcos = new Cliente()
+            {
+                nome = "Marcos",
+                cpf = "477.444",
+                profissao = "Desenvolvedor"
+            };
+
             ContaCorrente contaMarcos = new ContaCorrente()
             {
-                titular = "Marcos",
+                titular = marcos,
                 agencia = 100,
                 numero = 56526,
                 saldo = 120.60
@@ -19,9 +27,16 @@ namespace ByteBank
             contaPaulo.Sacar(50);
             contaPaulo.Depositar(500);
 
+            var gabriela = new Cliente()
+            {
+                nome = "Gabriela",
+                cpf = "555.444",
+                profissao = "Desenvolvedor SR"
+            };
+
             ContaCorrente contaDaGabriela = new ContaCorrente()
             {
-                titular = "Gabriela"
+                titular = gabriela
             };
 
             contaPaulo.Tranferir(100, contaDaGabriela);
