@@ -16,9 +16,9 @@ namespace ByteBank
 
             ContaCorrente contaMarcos = new ContaCorrente()
             {
-                titular = marcos,
-                agencia = 100,
-                numero = 56526,
+                Titular = marcos,
+                Agencia = 100,
+                Numero = 56526,
             };
 
             contaMarcos.Saldo = 120.60;
@@ -37,16 +37,16 @@ namespace ByteBank
 
             ContaCorrente contaDaGabriela = new ContaCorrente()
             {
-                titular = gabriela
+                Titular = gabriela
             };
 
             contaPaulo.Tranferir(100, contaDaGabriela);
 
-            Console.WriteLine(contaMarcos.titular);
+            Console.WriteLine(contaMarcos.Titular);
             Console.WriteLine(contaMarcos.Saldo);
-            Console.WriteLine(contaPaulo.titular);
+            Console.WriteLine(contaPaulo.Titular);
             Console.WriteLine(contaPaulo.Saldo);
-            Console.WriteLine(contaDaGabriela.titular);
+            Console.WriteLine(contaDaGabriela.Titular);
             Console.WriteLine(contaDaGabriela.Saldo);
         }
     }
