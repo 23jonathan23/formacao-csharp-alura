@@ -19,10 +19,19 @@ namespace ByteBank
             contaPaulo.Sacar(50);
             contaPaulo.Depositar(500);
 
+            ContaCorrente contaDaGabriela = new ContaCorrente()
+            {
+                titular = "Gabriela"
+            };
+
+            contaPaulo.Tranferir(100, contaDaGabriela);
+
             Console.WriteLine(contaMarcos.titular);
             Console.WriteLine(contaMarcos.saldo);
             Console.WriteLine(contaPaulo.titular);
             Console.WriteLine(contaPaulo.saldo);
+            Console.WriteLine(contaDaGabriela.titular);
+            Console.WriteLine(contaDaGabriela.saldo);
         }
     }
 }

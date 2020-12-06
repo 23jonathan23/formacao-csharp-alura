@@ -23,4 +23,15 @@ public class ContaCorrente
         saldo += valor;
     }
 
+    public bool Tranferir(double valor, ContaCorrente contaDestino)
+    {
+        if (saldo < valor)
+        {
+            return false;
+        }
+
+        saldo -= valor;
+        contaDestino.Depositar(valor);
+        return true;
+    }
 }
