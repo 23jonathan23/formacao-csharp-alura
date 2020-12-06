@@ -21,7 +21,7 @@ namespace ByteBank
                 numero = 56526,
             };
 
-            contaMarcos.DefinirSaldo(120.60);
+            contaMarcos.Saldo = 120.60;
 
             ContaCorrente contaPaulo = contaMarcos;
 
@@ -43,11 +43,11 @@ namespace ByteBank
             contaPaulo.Tranferir(100, contaDaGabriela);
 
             Console.WriteLine(contaMarcos.titular);
-            Console.WriteLine(contaMarcos.ObterSaldo());
+            Console.WriteLine(contaMarcos.Saldo);
             Console.WriteLine(contaPaulo.titular);
-            Console.WriteLine(contaPaulo.ObterSaldo());
+            Console.WriteLine(contaPaulo.Saldo);
             Console.WriteLine(contaDaGabriela.titular);
-            Console.WriteLine(contaDaGabriela.ObterSaldo());
+            Console.WriteLine(contaDaGabriela.Saldo);
         }
     }
 }

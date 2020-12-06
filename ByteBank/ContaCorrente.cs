@@ -5,49 +5,46 @@ namespace ByteBank.Domain
         public Cliente titular { get; set; }
         public int agencia { get; set; }
         public int numero { get; set; }
-        private double saldo;
+        private double _saldo;
 
-        public void DefinirSaldo(double valor)
+        public double Saldo
         {
-            if (valor < saldo)
+            get
             {
-                return;
+                return _saldo;
             }
-
-            saldo += valor;
-        }
-
-        public double ObterSaldo()
-        {
-            return saldo;
+            set
+            {
+                _saldo += value;
+            }
         }
 
         public bool Sacar(double valor)
         {
-            if (saldo < valor)
+            if (_saldo < valor)
             {
                 return false;
             }
             else
             {
-                saldo -= valor;
+                _saldo -= valor;
                 return true;
             }
         }
 
         public void Depositar(double valor)
         {
-            saldo += valor;
+            _saldo += valor;
         }
 
         public bool Tranferir(double valor, ContaCorrente contaDestino)
         {
-            if (saldo < valor)
+            if (_saldo < valor)
             {
                 return false;
             }
 
-            saldo -= valor;
+            _saldo -= valor;
             contaDestino.Depositar(valor);
             return true;
         }
