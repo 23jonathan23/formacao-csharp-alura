@@ -2,19 +2,24 @@
 
 namespace ByteBank
 {
-  class Program
-  {
-    static void Main(string[] args)
+    class Program
     {
-      ContaCorrente contaMarcos = new ContaCorrente();
+        static void Main(string[] args)
+        {
+            ContaCorrente contaMarcos = new ContaCorrente()
+            {
+                titular = "Marcos",
+                agencia = 100,
+                numero = 56526,
+                saldo = 120.60
+            };
 
-      contaMarcos.titular = "Marcos";
-      contaMarcos.agencia = 100;
-      contaMarcos.numero = 56526;
-      contaMarcos.saldo = 120.60;
+            ContaCorrente contaPaulo = contaMarcos;
 
-      Console.WriteLine(contaMarcos.titular);
-      Console.WriteLine(contaMarcos.saldo);
+            Console.WriteLine(contaMarcos.titular);
+            Console.WriteLine(contaMarcos.saldo);
+            Console.WriteLine(contaPaulo.titular);
+            Console.WriteLine(contaPaulo.saldo);
+        }
     }
-  }
 }
