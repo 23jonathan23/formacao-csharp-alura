@@ -1,3 +1,4 @@
+C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\bin\Debug\netcoreapp2.1\Alura.WebAPI.AuthProvider.deps.json
 C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\bin\Debug\netcoreapp2.1\Alura.WebAPI.AuthProvider.runtimeconfig.json
@@ -19,4 +20,3 @@ C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.Aut
 C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\obj\Debug\netcoreapp2.1\Alura.WebAPI.AuthProvider.dll
 C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\obj\Debug\netcoreapp2.1\Alura.WebAPI.AuthProvider.pdb
 C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\obj\Debug\netcoreapp2.1\Alura.WebAPI.AuthProvider.genruntimeconfig.cache
-C:\Users\jonathan.silva\Desktop\Curso_CSharp_Alura\Alura.WebAPI\Alura.WebAPI.AuthProvider\bin\Debug\netcoreapp2.1\appsettings.json
