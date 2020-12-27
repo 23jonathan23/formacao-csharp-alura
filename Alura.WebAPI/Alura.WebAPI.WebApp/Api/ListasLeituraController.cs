@@ -2,11 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Persistencia;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Lista = Alura.ListaLeitura.Modelos.ListaLeitura;
 
 namespace Alura.WebAPI.WebApp.Api
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ListaLeituraController : ControllerBase
