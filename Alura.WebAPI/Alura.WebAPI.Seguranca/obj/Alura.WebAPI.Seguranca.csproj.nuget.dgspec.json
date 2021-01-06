@@ -42,9 +42,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.IdentityModel.Tokens": {
+            "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
-              "version": "[5.2.4, )"
+              "version": "[6.8.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

@@ -13,12 +13,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Alura.teste
+namespace Alura.WebAPI.Api
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public IConfiguration Configuration { get; }
 
         public Startup(IConfiguration config)
@@ -28,34 +26,31 @@ namespace Alura.teste
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<LeituraContext>(options =>
-            {
+            services.AddDbContext<LeituraContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("ListaLeitura"));
             });
 
             services.AddTransient<IRepository<Livro>, RepositorioBaseEF<Livro>>();
 
-            services.AddMvc(options =>
-            {
-                options.OutputFormatters.Add(new LivrosCsvFormatter());
+            services.AddMvc(options => {
+                options.OutputFormatters.Add(new LivroCsvFormatter());
             }).AddXmlSerializerFormatters();
 
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = "JwtBearer";
                 options.DefaultChallengeScheme = "JwtBearer";
-            }).AddJwtBearer("JwtBearer", options =>
-            {
+            }).AddJwtBearer("JwtBearer", options => {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("jonathan-webapi-authentication-valid")),
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("alura-webapi-authentication-valid")),
                     ClockSkew = TimeSpan.FromMinutes(5),
                     ValidIssuer = "Alura.WebApp",
-                    ValidAudience = "Postman"
+                    ValidAudience = "Postman",
                 };
             });
         }

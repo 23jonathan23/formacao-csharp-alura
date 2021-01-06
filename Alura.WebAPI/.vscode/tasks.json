@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Alura.WebAPI.WebApp/Alura.WebAPI.WebApp.csproj",
+                "${workspaceFolder}/Alura.WebAPI.Api/Alura.WebAPI.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Alura.WebAPI.WebApp/Alura.WebAPI.WebApp.csproj",
+                "${workspaceFolder}/Alura.WebAPI.Api/Alura.WebAPI.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/Alura.WebAPI.WebApp/Alura.WebAPI.WebApp.csproj",
+                "${workspaceFolder}/Alura.WebAPI.Api/Alura.WebAPI.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

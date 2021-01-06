@@ -1,23 +1,27 @@
-using System.Text;
-using System.Threading.Tasks;
-using Alura.ListaLeitura.Modelos;
+﻿using Alura.ListaLeitura.Modelos;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Net.Http.Headers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.Api.Formatters
 {
-    public class LivrosCsvFormatter : TextOutputFormatter
+    public class LivroCsvFormatter : TextOutputFormatter
     {
-        public LivrosCsvFormatter()
+
+        public LivroCsvFormatter()
         {
-            var csvMediaType = MediaTypeHeaderValue.Parse("text/csv");
+            var textCsvMediaType = MediaTypeHeaderValue.Parse("text/csv");
             var appCsvMediaType = MediaTypeHeaderValue.Parse("application/csv");
-            SupportedMediaTypes.Add(csvMediaType);
+            SupportedMediaTypes.Add(textCsvMediaType);
             SupportedMediaTypes.Add(appCsvMediaType);
             SupportedEncodings.Add(Encoding.UTF8);
         }
 
-        protected override bool CanWriteType(System.Type type)
+        protected override bool CanWriteType(Type type)
         {
             return type == typeof(LivroApi);
         }
@@ -36,7 +40,7 @@ namespace Alura.ListaLeitura.Api.Formatters
             using (var escritor = context.WriterFactory(context.HttpContext.Response.Body, selectedEncoding))
             {
                 return escritor.WriteAsync(livroEmCsv);
-            } //escritor.Close();
+            } //escritor.Close()
         }
     }
 }

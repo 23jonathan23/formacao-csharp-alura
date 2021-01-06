@@ -1,5 +1,7 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Alura.ListaLeitura.Seguranca;
@@ -26,16 +28,16 @@ namespace Alura.ListaLeitura.Services
             if (ModelState.IsValid)
             {
                 var result = await _signInManager.PasswordSignInAsync(model.Login, model.Password, true, true);
-
                 if (result.Succeeded)
                 {
-                    var direitos = new[] {
+                    //cria token (header + payload >> direitos + signature)
+                    var direitos = new[]
+                    {
                         new Claim(JwtRegisteredClaimNames.Sub, model.Login),
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                     };
 
-                    var chave = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("jonathan-webapi-authentication-valid"));
-
+                    var chave = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("alura-webapi-authentication-valid"));
                     var credenciais = new SigningCredentials(chave, SecurityAlgorithms.HmacSha256);
 
                     var token = new JwtSecurityToken(
@@ -47,13 +49,11 @@ namespace Alura.ListaLeitura.Services
                     );
 
                     var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
-
                     return Ok(tokenString);
                 }
-
-                return Unauthorized();
+                return Unauthorized(); //401
             }
-            return BadRequest();
+            return BadRequest(); //400
         }
     }
 }

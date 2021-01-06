@@ -1,5 +1,7 @@
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Persistencia;
 using Microsoft.AspNetCore.Authorization;
@@ -11,16 +13,16 @@ namespace Alura.ListaLeitura.Api.Controllers
     [Authorize]
     [ApiController]
     [Route("api/[controller]")]
-    public class ListaLeituraController : ControllerBase
+    public class ListasLeituraController : ControllerBase
     {
         private readonly IRepository<Livro> _repo;
 
-        public ListaLeituraController(IRepository<Livro> repository)
+        public ListasLeituraController(IRepository<Livro> repository)
         {
             _repo = repository;
         }
 
-        private Lista CriarLista(TipoListaLeitura tipo)
+        private Lista CriaLista(TipoListaLeitura tipo)
         {
             return new Lista
             {
@@ -35,9 +37,9 @@ namespace Alura.ListaLeitura.Api.Controllers
         [HttpGet]
         public IActionResult TodasListas()
         {
-            Lista paraLer = CriarLista(TipoListaLeitura.ParaLer);
-            Lista lendo = CriarLista(TipoListaLeitura.Lendo);
-            Lista lidos = CriarLista(TipoListaLeitura.Lidos);
+            Lista paraLer = CriaLista(TipoListaLeitura.ParaLer);
+            Lista lendo = CriaLista(TipoListaLeitura.Lendo);
+            Lista lidos = CriaLista(TipoListaLeitura.Lidos);
             var colecao = new List<Lista> { paraLer, lendo, lidos };
             return Ok(colecao);
         }
@@ -45,22 +47,8 @@ namespace Alura.ListaLeitura.Api.Controllers
         [HttpGet("{tipo}")]
         public IActionResult Recuperar(TipoListaLeitura tipo)
         {
-            var lista = CriarLista(tipo);
+            var lista = CriaLista(tipo);
             return Ok(lista);
-        }
-
-        [HttpGet("capas/{id}")]
-        public IActionResult ImagemCapa(int id)
-        {
-            byte[] img = _repo.All
-                .Where(l => l.Id == id)
-                .Select(l => l.ImagemCapa)
-                .FirstOrDefault();
-            if (img != null)
-            {
-                return File(img, "image/png");
-            }
-            return File("~/images/capas/capa-vazia.png", "image/png");
         }
     }
 }
