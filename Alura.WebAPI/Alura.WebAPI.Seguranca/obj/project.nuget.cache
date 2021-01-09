@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Zw4uUw3y38de+BW0Al7nYb+sR4m2T3V4ITnukCXHtT9ImAC2ZOqqt4vKlbCK2JBE8wzSz6zyQ0/gjv0U3JP1UA==",
+  "dgSpecHash": "svgCYjE8kYFL3Ds8aE8XgYh1P1aHl1OThiefM6116ZW+KXX6b9HiQzsLzC9zoCP3ZWfHghY35eYN1wedZzwBJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jonathan.silva\\Desktop\\Curso_CSharp_Alura\\Alura.WebAPI\\Alura.WebAPI.Seguranca\\Alura.WebAPI.Seguranca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
-    "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mndzeoXlP8icYTqVeopdg63Vwf1Rl9LilL8B3AsnbAgZgNP/ZabMnN7QXVjgfdC1+m18Kqvh6ZzfK+WjgLIJJw==",
+  "dgSpecHash": "D3oDnJOBIVNX1OsqYjnnXU3XXmEwx/L5f1rIHxH9OjnsN/qZ35Fi85q8nvlNSRoOCFRljryFtiT8iZMGvQJO2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\jonathan.silva\\Desktop\\Curso_CSharp_Alura\\Alura.WebAPI\\Alura.WebAPI.WebApp\\Alura.WebAPI.WebApp.csproj",
   "expectedPackageFiles": [
@@ -156,7 +156,7 @@
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\2.1.0\\microsoft.extensions.options.configurationextensions.2.1.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.extensions.webencoders\\2.1.0\\microsoft.extensions.webencoders.2.1.0.nupkg.sha512",
-    "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.2.4\\microsoft.identitymodel.jsonwebtokens.5.2.4.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.2.0\\microsoft.identitymodel.protocols.5.2.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\5.2.0\\microsoft.identitymodel.protocols.openidconnect.5.2.0.nupkg.sha512",

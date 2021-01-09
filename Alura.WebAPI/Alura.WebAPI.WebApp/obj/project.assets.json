@@ -2287,16 +2287,18 @@
           "lib/netstandard2.0/Microsoft.Extensions.WebEncoders.dll": {}
         }
       },
-      "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
+      "Microsoft.IdentityModel.JsonWebTokens/5.2.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "6.8.0"
+          "Microsoft.IdentityModel.Tokens": "5.2.4",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.1"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
+          "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
       "Microsoft.IdentityModel.Logging/6.8.0": {
@@ -4483,21 +4485,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Alura.WebAPI.DAL.Livros/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Alura.WebAPI.Model": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "2.1.0",
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.0"
-        },
-        "compile": {
-          "bin/placeholder/Alura.WebAPI.DAL.Livros.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Alura.WebAPI.DAL.Livros.dll": {}
-        }
-      },
       "Alura.WebAPI.DAL.Usuarios/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -4530,7 +4517,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "6.8.0"
+          "Microsoft.IdentityModel.Tokens": "6.8.0"
         },
         "compile": {
           "bin/placeholder/Alura.WebAPI.Seguranca.dll": {}
@@ -6668,20 +6655,23 @@
         "microsoft.extensions.webencoders.nuspec"
       ]
     },
-    "Microsoft.IdentityModel.JsonWebTokens/6.8.0": {
-      "sha512": "+7JIww64PkMt7NWFxoe4Y/joeF7TAtA/fQ0b2GFGcagzB59sKkTt/sMZWR6aSZht5YC7SdHi3W6yM1yylRGJCQ==",
+    "Microsoft.IdentityModel.JsonWebTokens/5.2.4": {
+      "sha512": "494JCwsMINjjmrl/kOTdOtcsm3ESh8W16zg0b3nNJBgnpOu9eDgs8KDOtP3kRjSQtHcLrTsBI1XJ5FbhKm1TrA==",
       "type": "package",
-      "path": "microsoft.identitymodel.jsonwebtokens/6.8.0",
+      "path": "microsoft.identitymodel.jsonwebtokens/5.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net45/Microsoft.IdentityModel.JsonWebTokens.pdb",
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/net461/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.xml",
-        "microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.pdb",
+        "lib/net451/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.pdb",
+        "lib/netstandard1.4/Microsoft.IdentityModel.JsonWebTokens.xml",
+        "microsoft.identitymodel.jsonwebtokens.5.2.4.nupkg.sha512",
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
@@ -12231,11 +12221,6 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Alura.WebAPI.DAL.Livros/1.0.0": {
-      "type": "project",
-      "path": "../Alura.WebAPI.DAL.Livros/Alura.WebAPI.DAL.Livros.csproj",
-      "msbuildProject": "../Alura.WebAPI.DAL.Livros/Alura.WebAPI.DAL.Livros.csproj"
-    },
     "Alura.WebAPI.DAL.Usuarios/1.0.0": {
       "type": "project",
       "path": "../Alura.WebAPI.DAL.Usuarios/Alura.WebAPI.DAL.Usuarios.csproj",
@@ -12254,7 +12239,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Alura.WebAPI.DAL.Livros >= 1.0.0",
       "Alura.WebAPI.DAL.Usuarios >= 1.0.0",
       "Alura.WebAPI.Model >= 1.0.0",
       "Alura.WebAPI.Seguranca >= 1.0.0",
@@ -12297,9 +12281,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\jonathan.silva\\Desktop\\Curso_CSharp_Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Livros\\Alura.WebAPI.DAL.Livros.csproj": {
-              "projectPath": "C:\\Users\\jonathan.silva\\Desktop\\Curso_CSharp_Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Livros\\Alura.WebAPI.DAL.Livros.csproj"
-            },
             "C:\\Users\\jonathan.silva\\Desktop\\Curso_CSharp_Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Usuarios\\Alura.WebAPI.DAL.Usuarios.csproj": {
               "projectPath": "C:\\Users\\jonathan.silva\\Desktop\\Curso_CSharp_Alura\\Alura.WebAPI\\Alura.WebAPI.DAL.Usuarios\\Alura.WebAPI.DAL.Usuarios.csproj"
             },
