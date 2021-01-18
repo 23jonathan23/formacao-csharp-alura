@@ -1,11 +1,15 @@
-﻿using Alura.ListaLeitura.HttpClients;
+﻿using Alura.ListaLeitura.Seguranca;
+using Alura.ListaLeitura.HttpClients;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Alura.WebAPI.WebApp.Formatters;
 using System;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 
 namespace Alura.ListaLeitura.WebApp
 {
@@ -20,19 +24,21 @@ namespace Alura.ListaLeitura.WebApp
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpContextAccessor();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                   .AddCookie(options => {
-                       options.LoginPath = "/Usuario/Login";
-                   });
-
-            services.AddHttpClient<LivroApiClient>(client => {
-                client.BaseAddress = new Uri("http://localhost:6000/api/");
+            services
+                .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options  => {
+                    options.LoginPath = "/Usuario/Login";
             });
 
-            services.AddHttpClient<AuthApiClient>(client => {
-                client.BaseAddress = new Uri("http://localhost:5000/api/");
+            services.AddHttpClient<LivroApiClient>(client => {
+                client.BaseAddress = new Uri(Configuration["ApiURIs:LivrosApi"]);
+            });
+
+            services.AddHttpClient<AuthApiClient>(client =>
+            {
+                client.BaseAddress = new Uri(Configuration["ApiURIs:AuthApi"]);
             });
 
             services.AddMvc(options => {
