@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7Z4JOmBXB4KrC3EAgbz43PY7sRI6PEGN8bT7dOEHq9awSPGK2fIyiJ8oh7k6Kz23HL21rVd+/99gRsQumgJsw==",
+  "dgSpecHash": "6rCI3e9jd7inc+1geFs6BUtv2t0H8S+/6IGsGAUOfu3nd7hjzGQ2v3oksTxmFyW+jj7FfNr9yE2duyddtchTHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jonathan.silva\\Desktop\\Curso_CSharp_Alura\\Alura.WebAPI\\Alura.WebAPI.Api\\Alura.WebAPI.Api.csproj",
   "expectedPackageFiles": [
@@ -194,6 +194,11 @@
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\jonathan.silva\\.nuget\\packages\\swashbuckle.aspnetcore\\3.0.0\\swashbuckle.aspnetcore.3.0.0.nupkg.sha512",
+    "C:\\Users\\jonathan.silva\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\4.0.1\\swashbuckle.aspnetcore.annotations.4.0.1.nupkg.sha512",
+    "C:\\Users\\jonathan.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\4.0.1\\swashbuckle.aspnetcore.swagger.4.0.1.nupkg.sha512",
+    "C:\\Users\\jonathan.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\4.0.1\\swashbuckle.aspnetcore.swaggergen.4.0.1.nupkg.sha512",
+    "C:\\Users\\jonathan.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\3.0.0\\swashbuckle.aspnetcore.swaggerui.3.0.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
@@ -223,7 +228,7 @@
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.io.pipelines\\4.5.0\\system.io.pipelines.4.5.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
-    "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.linq.dynamic.core\\1.2.7\\system.linq.dynamic.core.1.2.7.nupkg.sha512",
+    "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.linq.dynamic.core\\1.0.9\\system.linq.dynamic.core.1.0.9.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.linq.queryable\\4.0.1\\system.linq.queryable.4.0.1.nupkg.sha512",
     "C:\\Users\\jonathan.silva\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",

@@ -24,6 +24,7 @@ namespace Alura.ListaLeitura.Api.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(statusCode: 200, Type = typeof(List<LivroApi>))]
         public IActionResult ListaDeLivros()
         {
             var lista = _repo.All.Select(l => l.ToApi()).ToList();

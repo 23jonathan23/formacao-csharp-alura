@@ -2,16 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Linq.Dynamic.Core;
+using System.Threading.Tasks;
 
-namespace Alura.WebAPI.Api.Modelos
+namespace Alura.ListaLeitura.Ordenacao
 {
-    public static class LivroOrdemExtentions
+    public static class LivroOrdemExtensions
     {
-        public static IQueryable<Livro> AplicaOrdem(this IQueryable<Livro> query, LivroOrdem ordem)
+        public static IQueryable<Livro> AplicaOrdenacao(this IQueryable<Livro> query, LivroOrdem ordem)
         {
-            if (ordem != null)
+            if ((ordem != null)&&(!string.IsNullOrEmpty(ordem.OrdenarPor)))
             {
                 query = query.OrderBy(ordem.OrdenarPor);
             }
